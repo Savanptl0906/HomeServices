@@ -1,0 +1,58 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sample"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/new_home"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Choose Your Login"
+        android:textStyle="italic|bold"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_login"
+        android:onClick="customer"
+        android:text="Customer"
+        android:layout_marginLeft="40dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:background="@drawable/background_signup"
+        android:text="Provider"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:onClick="provider"/>
+
+    <Button
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_login"
+        android:onClick="serviceMan"
+        android:text="Service Man"
+        android:layout_marginLeft="40dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp" />
+</LinearLayout>

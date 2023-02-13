@@ -1,0 +1,103 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sample">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/new_home"/>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Your Registration Number"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_dark"
+        android:padding="16dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold|italic"/>
+
+    <EditText
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Registration Number"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:inputType="phone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_call_black1_24dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:inputType="phone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/background_dark" />
+
+
+    <Button
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_login"
+        android:onClick="check"
+        android:text="Check Number"
+        android:layout_marginLeft="40dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:background="@drawable/background_signup"
+        android:text="Reset"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:onClick="reset"/>
+</LinearLayout>
+</ScrollView>

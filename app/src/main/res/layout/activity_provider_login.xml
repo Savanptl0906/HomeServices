@@ -1,0 +1,102 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sample"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/new_home"/>
+
+    <EditText
+        android:id="@+id/mobile"
+        android:text="+91"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_call_black1_24dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:inputType="phone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/background_dark" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColor="@android:color/background_dark"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:hint="......."
+        android:textColorHint="@android:color/background_dark"
+        android:maxLines="1"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/background_dark" />
+    <Button
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_login"
+        android:onClick="login"
+        android:text="Log in"
+        android:layout_marginLeft="40dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="282dp"
+        android:layout_height="47dp"
+        android:background="@drawable/background_signup"
+        android:text="Reset"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:onClick="reset"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Here."
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_dark"
+        android:padding="16dp"
+        android:onClick="signup"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_dark"
+        android:padding="16dp"
+        android:onClick="forgot"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>

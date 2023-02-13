@@ -1,0 +1,355 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/new_home"/>
+
+        <TextView
+            android:text="Customer Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:textColorHint="@android:color/background_dark"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+
+
+        <TextView
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Name"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:inputType="textPersonName"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+        <TextView
+            android:id="@+id/cmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_call_black1_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:inputType="textPersonName"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/caddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Address"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:inputType="textPersonName"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/visitcharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Visit Charge"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:inputType="textPersonName"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+
+
+        <TextView
+            android:text="Product Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:textColorHint="@android:color/background_dark"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name and Model Number :"
+            android:textColor="@android:color/background_dark"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:textColorHint="@android:color/background_dark"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Issues With The Produact :"
+            android:textColor="@android:color/background_dark"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:textColorHint="@android:color/background_dark"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+
+        <TextView
+            android:text="Service Provider Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:textColorHint="@android:color/background_dark"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+
+
+        <TextView
+            android:id="@+id/pr_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Name"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:inputType="textPersonName"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+        <TextView
+            android:id="@+id/pr_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_call_black1_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:inputType="textPersonName"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+
+
+        <TextView
+            android:text="ServiceMan Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:textColorHint="@android:color/background_dark"
+            android:maxLines="1"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+
+        <TextView
+            android:id="@+id/sname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Name"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:inputType="textPersonName"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+        <TextView
+            android:id="@+id/smobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_call_black1_24dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:inputType="textPersonName"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark" />
+
+
+        <Button
+            android:id="@+id/buttonStartVerification"
+            android:text="Give Ratting"
+            android:onClick="ratting"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/background_signup"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pay"
+            android:id="@+id/pay"
+            />
+    </LinearLayout>
+</ScrollView>

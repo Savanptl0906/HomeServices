@@ -1,0 +1,596 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/sample">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/new_home"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommended Services"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/electricians"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/electrician"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Electricians"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/plumbers"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/plumber"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plumbers"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/pestcontrol"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/pest_control"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pest Control"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/geyser"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/geyser"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Geyser/Water Heater Repair"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/carpenters"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/carpenter"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carpenters"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appliance Repair"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ac"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/ac_service"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AC Service and Repair"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/refregerator"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/refregerator_services"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refregerator Repair"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/washing"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/washing_machine_repairs"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Washing Machine Repair"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/waterpurifier"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/water_purifier"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RO or Water Purifier Repair"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/microwave"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/microwave_services"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Microwave Repair"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Cleaning"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/kitchencleaning"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/kitchen_cleaning"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kitchen Deep cleaning"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/homedeepcleaning"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/home_deep_cleaning"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home Deep cleaning"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/carpet"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/carpet_cleaning"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carpet Cleaning"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bathroomcleaning"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/bathroom_cleaning"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bathroom Deep Cleaning"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/garden"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/garden_cleaning"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Garden Cleaning"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/sofa"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/sofa_cleaning"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sofa Cleaning"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interiors Services"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/homepainting"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/home_painting"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home Painting"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/architect"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/architect"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Architect"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/modularkitchen"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/modular_kitchen"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modular Kitchen"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bathroomrenovation"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/bathroom_renovation"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bathroom Renovation"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/furniture"
+                        android:onClick="same"
+                        android:layout_width="200dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/shape"
+                        android:background="@drawable/furniture"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Furniture"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/background_dark"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

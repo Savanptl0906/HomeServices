@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homeservices">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Ratting"></activity>
+        <activity android:name=".CustomerServiceDescription" />
+        <activity
+            android:name=".CustomerServicePage"
+            android:label="@string/title_activity_customer_service_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CustomerDescription2" />
+        <activity
+            android:name=".AssignServiceMan"
+            android:label="@string/title_activity_assign_service_man"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ServiceManList" />
+        <activity android:name=".CustomerDescription" />
+        <activity android:name=".ProviderRegistration" />
+        <activity android:name=".ProviderMapLocation" />
+        <activity android:name=".ServiceManHome" />
+        <activity android:name=".ServiceManLogin" />
+        <activity
+            android:name=".ServiceMan"
+            android:label="@string/title_activity_service_man"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerOrder"
+            android:label="@string/title_activity_customer_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CustomerWelcome" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/key" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+        -->
+        <service
+            android:name=".notification.NotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ProviderListForCustomer"
+            android:label="@string/title_activity_provider_list_for_customer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerRequest"
+            android:label="@string/title_activity_customer_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MapLocation">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".CustomerMobileSignup" />
+        <activity
+            android:name=".ProviderProfileActivity"
+            android:label="@string/title_activity_provider_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProviderHomeActivity"
+            android:label="@string/title_activity_provider_home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+
+                <category android:name="android.intent.catory.Default" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProviderMobileSignup" />
+        <activity
+            android:name=".CustomerProfile"
+            android:label="@string/title_activity_customer_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerHomeActivitty"
+            android:label="@string/title_activity_customer_home_activitty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CustomerSignupActivity" />
+        <activity android:name=".ProviderSignupActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProviderLoginActivity" />
+        <activity android:name=".CustomerLoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>
